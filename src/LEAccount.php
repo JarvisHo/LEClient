@@ -133,9 +133,9 @@ class LEAccount
 		{
 			$this->id = isset($post['body']['id']) ? $post['body']['id'] : '';
 			$this->key = $post['body']['key'];
-			$this->contact = $post['body']['contact'];
+			$this->contact = isset($post['body']['contact']) ? $post['body']['contact'] : array();
 			$this->agreement = isset($post['body']['agreement']) ? $post['body']['agreement'] : '';
-			$this->initialIp = $post['body']['initialIp'];
+			$this->initialIp = isset($post['body']['initialIp']) ? $post['body']['initialIp'] : '';
 			$this->createdAt = $post['body']['createdAt'];
 			$this->status = $post['body']['status'];
 		}
@@ -162,9 +162,9 @@ class LEAccount
 		{
 			$this->id = isset($post['body']['id']) ? $post['body']['id'] : '';
 			$this->key = $post['body']['key'];
-			$this->contact = $post['body']['contact'];
+			$this->contact = isset($post['body']['contact']) ? $post['body']['contact'] : array();
 			$this->agreement = isset($post['body']['agreement']) ? $post['body']['agreement'] : '';
-			$this->initialIp = $post['body']['initialIp'];
+			$this->initialIp = isset($post['body']['initialIp']) ? $post['body']['initialIp'] : '';
 			$this->createdAt = $post['body']['createdAt'];
 			$this->status = $post['body']['status'];
 			if($this->log instanceof \Psr\Log\LoggerInterface) 
