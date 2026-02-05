@@ -1,5 +1,5 @@
 {
-  "name": "JarvisHo/leclient",
+  "name": "jarvis-ho/leclient",
   "type": "library",
   "description": "PHP LetsEncrypt client library for ACME v2 forked from yourivw/leclient",
   "license": "MIT",
